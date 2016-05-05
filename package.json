@@ -1,0 +1,23 @@
+{
+  "name": "merge-json",
+  "version": "1.0.0",
+  "description": "Merge two JSON Objects into one new Object",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacob418/node_json-merge.git"
+  },
+  "keywords": [
+    "json",
+    "merge"
+  ],
+  "author": "Jacob Fricke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jacob418/node_json-merge/issues"
+  },
+  "homepage": "https://github.com/jacob418/node_json-merge#readme"
+}
