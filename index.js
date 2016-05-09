@@ -12,7 +12,7 @@ var isJSON = function(json){
 exports.isJSON = isJSON ;
 
 
-var mergeJSON(json1, json2){
+var mergeJSON = function(json1, json2){
 	var result = null ;
 	if(isJSON(json2)){
 		result = {} ;
