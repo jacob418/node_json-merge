@@ -1,3 +1,5 @@
+###### english docs coming soon...
+
 # merge-json
 Node.js Modul, dass 2 funktionen zur verfügung stellt, `isJSON` und `mergeJSON`.
 
