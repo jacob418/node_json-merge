@@ -1,6 +1,6 @@
 {
   "name": "merge-json",
-  "version": "0.1.0-b.2",
+  "version": "0.1.0-b.3",
   "description": "Merge two JSON Objects into one new Object",
   "main": "index.js",
   "repository": {
