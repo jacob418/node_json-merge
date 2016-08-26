@@ -2,7 +2,7 @@
 var jsonC = {}.constructor ;
 
 var isJSON = function(json){
-	if(json.constructor === jsonC){
+	if(json && json.constructor === jsonC){
 		return true ;
 	}else{
 		return false ;
