@@ -30,4 +30,8 @@ describe('isJSON', function(){
 		expect(mergeJSON.isJSON(null), "fail on 'null'").to.be.false ;
 		expect(mergeJSON.isJSON(undefined), "fail on 'undefined'").to.be.false ;
 	}) ;
+
+	it('should return \'false\' on arrays', function(){
+		expect(mergeJSON.isJSON([]), "fail on '[]'").to.be.false ;
+	}) ;
 }) ;
