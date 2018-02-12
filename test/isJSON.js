@@ -34,4 +34,8 @@ describe('isJSON', function(){
 	it('should return \'false\' on arrays', function(){
 		expect(mergeJSON.isJSON([]), "fail on '[]'").to.be.false ;
 	}) ;
+
+	it('should return \'true\' on JSON objects', function(){
+		expect(mergeJSON.isJSON({}), "fail on '{}'").to.be.true ;
+	}) ;
 }) ;
