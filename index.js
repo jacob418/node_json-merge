@@ -7,7 +7,7 @@ var isJSON = function(json){
 	}else{
 		return false ;
 	}
-}
+} ;
 
 exports.isJSON = isJSON ;
 
