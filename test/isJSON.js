@@ -13,5 +13,6 @@ describe('isJSON', function(){
 		expect(mergeJSON.isJSON(-1), "fail on negative number (-1)").to.be.false ;
 		expect(mergeJSON.isJSON(1), "fail on positive number (1)").to.be.false ;
 		expect(mergeJSON.isJSON(0), "fail on zero (0)").to.be.false ;
+		expect(mergeJSON.isJSON(NaN), "fail on 'NaN'").to.be.false ;
 	}) ;
 }) ;
