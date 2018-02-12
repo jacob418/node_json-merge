@@ -4,6 +4,11 @@ const expect = require('chai').expect ;
 
 
 describe('isJSON', function(){
+	it('should return \'false\' on any object but JSON', function(){
+		expect(mergeJSON.isJSON(new Date()), "fail on date object 'new Date()'").to.be.false ;
+		expect(mergeJSON.isJSON(/.*/gi), "fail on regex '/.*/gi'").to.be.false ;
+	}) ;
+
 	it('should return \'false\' on strings', function(){
 		expect(mergeJSON.isJSON("test"), "fail on string 'test'").to.be.false ;
 		expect(mergeJSON.isJSON(""), "fail on empty string").to.be.false ;
