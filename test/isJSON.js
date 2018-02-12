@@ -20,4 +20,9 @@ describe('isJSON', function(){
 		expect(mergeJSON.isJSON(0), "fail on zero (0)").to.be.false ;
 		expect(mergeJSON.isJSON(NaN), "fail on 'NaN'").to.be.false ;
 	}) ;
+
+	it('should return \'false\' on boolean', function(){
+		expect(mergeJSON.isJSON(true), "fail on 'true'").to.be.false ;
+		expect(mergeJSON.isJSON(false), "fail on 'false'").to.be.false ;
+	}) ;
 }) ;
