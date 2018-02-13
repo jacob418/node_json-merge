@@ -11,6 +11,9 @@ var isJSON = function(json){
 
 exports.isJSON = isJSON ;
 
+var cloneJSON = function(data){
+	return mergeJSON({}, data) ;
+} ;
 
 var mergeJSON = function(json1, json2){
 	var result = null ;
