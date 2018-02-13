@@ -21,7 +21,11 @@ var mergeJSON = function(json1, json2){
 		result = {} ;
 		if(isJSON(json1)){
 			for(var key in json1){
-				result[key] = json1[key] ;
+				if(isJSON(json1[key]) || Array.isArray(json1[key])) {
+					result[key] = cloneJSON(json1[key]) ;
+				} else {
+					result[key] = json1[key];
+				}
 			}
 		}
 
