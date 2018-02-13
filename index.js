@@ -30,7 +30,7 @@ var mergeJSON = function(json1, json2){
 		}
 
 		for(var key in json2){
-			if(typeof result[key] === "object" && typeof json2 === "object"){
+			if(isJSON(json2[key]) || Array.isArray(json2[key])){
 				result[key] = mergeJSON(result[key], json2[key]) ;
 			}else{
 				result[key] = json2[key] ;
