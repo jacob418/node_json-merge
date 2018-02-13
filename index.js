@@ -42,6 +42,6 @@ var mergeJSON = function(json1, json2){
 	}
 
 	return result ;
-}
+} ;
 
 exports.merge = mergeJSON ;
